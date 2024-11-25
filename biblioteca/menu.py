@@ -4,6 +4,7 @@
 from alunos import cadastrarAluno, listaAluno, listarAluno
 from autores import cadastrarAutor, listaAutor, listarAutores
 from livros  import cadastrarLivro, listaLivro, listarLivros
+from emprestimos import emprestimo, listaEmprestimo, listarEmprestimo
 
 #Função para exibir o menu
 def menu():
@@ -34,6 +35,7 @@ def menu():
       cadastrarLivro()
     elif op ==4:
       print("Cadastrar emprestimo")
+      emprestimo()
     elif op ==5:
       print("Listar aluno")
       listaAluno()
@@ -45,6 +47,7 @@ def menu():
        listaLivro()
     elif op ==8:
       print("Listar emprestimo")
+      listaEmprestimo()
     elif op ==9:
       print("Exclusão")
     elif op ==10:
